@@ -1,0 +1,16 @@
+try:
+    pembelian = int(input("Masukkan jumlah pembelian: "))
+
+    if pembelian > 1000000:
+        diskon = 0.3
+    elif pembelian > 500000:
+        diskon = 0.2
+    elif pembelian >= 100000:
+        diskon = 0.15
+    else:
+        diskon = 0
+
+    print("Diskon yang didapat:", diskon)
+
+except:
+    print("Input tidak valid. Masukkan angka.")
