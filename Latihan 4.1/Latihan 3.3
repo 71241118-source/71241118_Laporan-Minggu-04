@@ -1,0 +1,18 @@
+inputuser = input("Masukkan usia anda: ")
+
+try:
+    usia = int(inputuser)
+
+    if usia <= 5:
+        print("Balita")
+    elif usia <= 11:
+        print("Kanak-kanak")
+    elif usia <= 25:
+        print("Remaja")
+    elif usia <= 45:
+        print("Dewasa")
+    else:
+        print("Lansia")
+
+except:
+    print("Anda salah memasukkan input usia")
